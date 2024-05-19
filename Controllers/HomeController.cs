@@ -1,6 +1,7 @@
 using GetOnTime.Models;
 using Microsoft.AspNetCore.Mvc;
 using System.Diagnostics;
+using GetOnTime.Models.Home;
 
 namespace GetOnTime.Controllers
 {
@@ -14,7 +15,7 @@ namespace GetOnTime.Controllers
         }
 
         public IActionResult Index()
-            => View();
+            => View(new IndexViewModel());
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()

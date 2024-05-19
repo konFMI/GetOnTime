@@ -4,7 +4,6 @@ using GetOnTime.Data;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
-using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 #nullable disable
@@ -12,11 +11,9 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace GetOnTime.Data.Migrations
 {
     [DbContext(typeof(GetOnTimeDbContext))]
-    [Migration("20240514222324_CreatedTabled")]
-    partial class CreatedTabled
+    partial class GetOnTimeDbContextModelSnapshot : ModelSnapshot
     {
-        /// <inheritdoc />
-        protected override void BuildTargetModel(ModelBuilder modelBuilder)
+        protected override void BuildModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -303,15 +300,15 @@ namespace GetOnTime.Data.Migrations
                         {
                             Id = "dea12856-c198-4129-b3f3-b893d8395082",
                             AccessFailedCount = 0,
-                            ConcurrencyStamp = "e05ee44c-f682-4bf9-af52-bb95cce657b4",
+                            ConcurrencyStamp = "19d0b53b-da48-403c-9258-c7b330c779bf",
                             Email = "agent1@mail.com",
                             EmailConfirmed = false,
                             LockoutEnabled = false,
                             NormalizedEmail = "agent1@mail.com",
                             NormalizedUserName = "agent@mail.com",
-                            PasswordHash = "AQAAAAIAAYagAAAAEHPDyE+B4/CehJKMFky182PzeT1B63N64tCrXbssektYkuK5AvCfA8sg3zb03FZiiQ==",
+                            PasswordHash = "AQAAAAIAAYagAAAAEOQggDVIp5EdFHqgvuaqY9dZWTLPbxAIfuOqOKQ6PoNaj300Kxg3q3u3tWQyvXGIRg==",
                             PhoneNumberConfirmed = false,
-                            SecurityStamp = "37498678-8eef-4c54-bd05-7cf7e61eed6b",
+                            SecurityStamp = "5990fdb4-ee22-4d5f-a2f3-43d03059d78f",
                             TwoFactorEnabled = false,
                             UserName = "agent@mail.com"
                         },
@@ -319,15 +316,15 @@ namespace GetOnTime.Data.Migrations
                         {
                             Id = "dea22456-c198-4119-b3f3-a893d8325082",
                             AccessFailedCount = 0,
-                            ConcurrencyStamp = "6d27068d-5e88-4e57-9265-7ac6ec2da4a8",
+                            ConcurrencyStamp = "bfec9c66-10c3-4b52-9f79-acb509e0b048",
                             Email = "agent2@mail.com",
                             EmailConfirmed = false,
                             LockoutEnabled = false,
                             NormalizedEmail = "agent2@mail.com",
                             NormalizedUserName = "agent2@mail.com",
-                            PasswordHash = "AQAAAAIAAYagAAAAELUImOoe0oKDl9EB47wtOaYaFi4YXn5e20aMyfiY3kI11PpPfOoFrLmcWlF0VLlP8Q==",
+                            PasswordHash = "AQAAAAIAAYagAAAAEBWdQusEUyn7/CW+OXOb3vtjDVLsMJp3DkSOUwjKjEgu8nfFvl+8kjI7Kk4gY05XPw==",
                             PhoneNumberConfirmed = false,
-                            SecurityStamp = "9a76d1a9-d563-43ad-8a3b-212751f4a2bf",
+                            SecurityStamp = "11ee3934-a6e7-407a-8c7c-7e4fa99db175",
                             TwoFactorEnabled = false,
                             UserName = "agent2@mail.com"
                         });
